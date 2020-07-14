@@ -93,13 +93,6 @@
 		</block>
 	</form>
 
-	<!-- This is the Exit block -->
-	<form id="Exit1">
-		<block>
-			<exit/>
-  		</block>
-	</form>
-
 	<!-- This is the Prompt block -->
 	<form id="Prompt1">
         
@@ -122,8 +115,27 @@
     		</prompt>
 		</block>
     	<block>
+    		<goto next="#Log1" />
+    	</block>
+	</form>
+
+	<!-- This is the Log block -->
+	<form id="Log1">
+		<block>
+			<log gvp:level="1">
+				<value expr="'hiiiiiiiiiiiiiii'"/>
+			</log>
+    	</block>
+    	<block>
     		<goto next="#Exit1" />
     	</block>
+	</form>
+
+	<!-- This is the Exit block -->
+	<form id="Exit1">
+		<block>
+			<exit/>
+  		</block>
 	</form>
 
 </vxml>
