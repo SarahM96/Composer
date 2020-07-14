@@ -127,7 +127,7 @@
 			</log>
     	</block>
     	<block>
-    		<goto next="#Exit1" />
+    		<goto next="#pipoo" />
     	</block>
 	</form>
 
@@ -136,6 +136,19 @@
 		<block>
 			<exit/>
   		</block>
+	</form>
+
+	<!-- This is the Prompt block -->
+	<form id="pipoo">
+        
+    	<block name="pipooP0">
+  			<prompt bargein="true"  gvp:langexpr="AppState.APP_LANGUAGE">
+				Prompt Data
+    		</prompt>
+		</block>
+    	<block>
+    		<goto next="#Exit1" />
+    	</block>
 	</form>
 
 </vxml>
