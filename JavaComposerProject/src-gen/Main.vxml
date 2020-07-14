@@ -122,6 +122,19 @@
     		</prompt>
 		</block>
     	<block>
+    		<goto next="#Prompt3" />
+    	</block>
+	</form>
+
+	<!-- This is the Prompt block -->
+	<form id="Prompt3">
+        
+    	<block name="Prompt3P0">
+  			<prompt bargein="true"  gvp:langexpr="AppState.APP_LANGUAGE">
+				<audio expr="getAudioURI('Sarah.wav')"></audio>
+    		</prompt>
+		</block>
+    	<block>
     		<goto next="#Exit1" />
     	</block>
 	</form>
