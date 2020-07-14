@@ -109,6 +109,19 @@
     		</prompt>
 		</block>
     	<block>
+    		<goto next="#Prompt2" />
+    	</block>
+	</form>
+
+	<!-- This is the Prompt block -->
+	<form id="Prompt2">
+        
+    	<block name="Prompt2P0">
+  			<prompt bargein="true"  gvp:langexpr="AppState.APP_LANGUAGE">
+				<audio expr="getAudioURI('hi.wav')"></audio>
+    		</prompt>
+		</block>
+    	<block>
     		<goto next="#Exit1" />
     	</block>
 	</form>
